@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadi Relawan — Rumah Singgah Tegar Sewan, Sewan Tangerang</title>
+  <meta name="description" content="Bergabung sebagai relawan di Rumah Singgah Tegar Sewan. Tidak perlu keahlian khusus — cukup niat dan waktu untuk anak-anak Sewan, Tangerang." />
+
+  <meta property="og:title" content="Jadi Relawan — Rumah Singgah Tegar Sewan" />
+  <meta property="og:description" content="Tidak perlu keahlian khusus. Cukup hadir dan mau berbagi untuk anak-anak Sewan, Tangerang." />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:         '#2A6049',
+            'primary-light': '#3D8A68',
+            'primary-faint': '#EAF4EF',
+            bg:              '#F7F5F0',
+            surface:         '#FFFFFF',
+            'surface-muted': '#F0EEE9',
+            'text-muted':    '#6B6560',
+            border:          '#E5E2DB',
+            accent:          '#25D366',
+            'accent-dark':   '#128C7E',
+          },
+          fontFamily: {
+            display: ['Fredoka', 'sans-serif'],
+            body:    ['Nunito', 'sans-serif'],
+          },
+          borderRadius: { bubble: '9999px' },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="canonical" href="https://rumahsinggahtegarsewan.id/jadi-relawan.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Rumah Singgah Tegar Sewan",
+    "url": "https://rumahsinggahtegarsewan.id",
+    "foundingDate": "2013",
+    "description": "Rumah singgah yang menyediakan pendidikan dan layanan kesehatan gratis untuk anak-anak di Sewan, Tangerang sejak 2013.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Rw. Kucing I GG Dadali 2 No.42, RT.001/RW.06",
+      "addressLocality": "Sewan",
+      "addressRegion": "Tangerang",
+      "addressCountry": "ID"
+    },
+    "telephone": "+6282111936758",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "volunteer",
+      "availableLanguage": "Indonesian"
+    }
+  }
+  </script>
+</head>
+<body class="bg-[#F7F5F0]">
+
+  <!-- VERSE TAGLINE BAR -->
+  <div class="bg-[#1C3D2D] text-center py-2.5 px-4">
+    <p class="text-white/75 font-body text-xs italic leading-relaxed">
+      <span class="hidden sm:inline">"Di rumah Bapa-Ku banyak tempat tinggal. Sebab Aku pergi ke situ untuk menyediakan tempat bagimu."&nbsp;</span>
+      <span class="text-white/75 not-italic">— Yohanes 14:2</span>
+    </p>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <nav class="flex items-center justify-between py-4" aria-label="Navigasi utama">
+        <a href="index.html" class="flex items-center no-underline" aria-label="Rumah Singgah Tegar Sewan — Halaman Utama">
+          <img src="images/logo/logo-full.jpeg"
+               alt="Tegar Sewan Refuge Center — Rumah Singgah Tegar Sewan"
+               class="h-16 w-auto"
+               width="64" height="64" />
+        </a>
+        <ul id="nav-menu" class="nav-menu list-none m-0 p-0" role="list">
+          <li><a href="index.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Beranda</a></li>
+          <li><a href="tentang-kami.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Tentang Kami</a></li>
+          <li><a href="program-kami.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Program</a></li>
+          <li><a href="galeri-cita-cita.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Galeri Cita-Cita</a></li>
+          <li><a href="transparansi-dana.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Transparansi</a></li>
+          <li><a href="blog.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Blog</a></li>
+          <li>
+            <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+tahu+lebih+tentang+Rumah+Singgah+Tegar+Sewan."
+               class="btn-primary text-sm py-2 px-5" target="_blank" rel="noopener noreferrer">Hubungi Kami</a>
+          </li>
+        </ul>
+        <button id="nav-toggle" class="md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-[#EAF4EF] transition-colors"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="Buka menu navigasi">
+          <span class="block w-6 h-0.5 bg-[#1C1A17] rounded"></span>
+          <span class="block w-6 h-0.5 bg-[#1C1A17] rounded"></span>
+          <span class="block w-6 h-0.5 bg-[#1C1A17] rounded"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+  <!-- PAGE HERO -->
+  <section class="bg-[#2A6049] py-16 md:py-20">
+    <div class="container">
+      <span class="badge bg-white/20 text-white mb-4">Jadi Relawan</span>
+      <h1 class="font-display text-white text-4xl md:text-5xl font-semibold max-w-2xl leading-tight mb-4">
+        Satu jam Anda, berarti besar untuk mereka.
+      </h1>
+      <p class="text-white/80 font-body text-lg max-w-xl leading-relaxed">
+        Tidak perlu keahlian luar biasa. Cukup hadir, mau berbagi, dan peduli. Kami akan tunjukkan caranya.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHY VOLUNTEER -->
+  <section class="section bg-[#F7F5F0]">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="badge badge-primary">Mengapa Relawan?</span>
+          <div class="divider mt-3 mb-4"></div>
+          <h2 class="section-heading mb-5">Lebih dari sekadar mengajar</h2>
+          <p class="text-[#6B6560] font-body leading-relaxed mb-4">
+            Menjadi relawan di sini bukan hanya soal transfer ilmu. Ini soal hadir secara konsisten untuk anak-anak yang butuh figur positif di sekitar mereka.
+          </p>
+          <p class="text-[#6B6560] font-body leading-relaxed mb-4">
+            Banyak relawan kami bilang pengalaman ini memberikan lebih dari yang mereka bayangkan — bukan hanya kepuasan membantu, tapi juga perspektif baru tentang kehidupan dan komunitas.
+          </p>
+          <p class="text-[#6B6560] font-body leading-relaxed">
+            Generasi relawan terus berganti. Tapi dampaknya pada anak-anak tetap terasa — dan nama Anda akan menjadi bagian dari cerita panjang ini.
+          </p>
+        </div>
+        <div class="rounded-2xl overflow-hidden">
+          <img src="images/volunteers/VOLUNTEERS-rumah-tangerang-anak-terdekat-opt.webp"
+               alt="Relawan Rumah Singgah Tegar Sewan bersama anak-anak di Sewan, Tangerang"
+               class="w-full h-full object-cover"
+               loading="lazy" width="560" height="420" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER ROLES -->
+  <section class="section bg-[#FFFFFF]">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="badge badge-primary">Peran Relawan</span>
+        <div class="divider mx-auto mt-3 mb-4"></div>
+        <h2 class="section-heading mb-4">Pilih peran yang paling sesuai</h2>
+        <p class="section-subheading max-w-xl mx-auto">
+          Ada berbagai cara untuk berkontribusi — temukan yang paling cocok dengan kemampuan dan jadwal Anda.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Role 1: Pendidikan -->
+        <div class="card p-6 md:p-7">
+          <div class="w-12 h-12 rounded-2xl bg-[#EAF4EF] flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-[#2A6049]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <span class="badge badge-primary mb-3">Pendidikan</span>
+          <h3 class="text-[#1C1A17] font-body font-bold text-lg mb-3">Relawan Pengajar</h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed mb-4">
+            Mengajar Matematika atau Bahasa Inggris untuk anak-anak usia SD. Cocok untuk mahasiswa pendidikan, sains, atau siapa saja yang senang mengajar.
+          </p>
+          <ul class="space-y-2">
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Minimal 1x seminggu
+            </li>
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Tidak harus dari jurusan pendidikan
+            </li>
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Ada arahan dari pengajar senior
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 2: Kesehatan -->
+        <div class="card p-6 md:p-7">
+          <div class="w-12 h-12 rounded-2xl bg-[#EAF4EF] flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-[#2A6049]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <span class="badge badge-primary mb-3">Kesehatan</span>
+          <h3 class="text-[#1C1A17] font-body font-bold text-lg mb-3">Relawan Kesehatan</h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed mb-4">
+            Membantu program pemeriksaan kesehatan dasar dan edukasi gizi. Ideal untuk mahasiswa keperawatan, kebidanan, gizi, atau kesehatan masyarakat.
+          </p>
+          <ul class="space-y-2">
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Jadwal fleksibel
+            </li>
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Didampingi bidan setempat
+            </li>
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Cocok untuk KKN / PKL
+            </li>
+          </ul>
+        </div>
+
+        <!-- Role 3: Umum -->
+        <div class="card p-6 md:p-7">
+          <div class="w-12 h-12 rounded-2xl bg-[#EAF4EF] flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-[#2A6049]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <span class="badge badge-primary mb-3">Umum</span>
+          <h3 class="text-[#1C1A17] font-body font-bold text-lg mb-3">Relawan Umum</h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed mb-4">
+            Membantu kegiatan harian, mendampingi anak-anak, menyiapkan materi, atau mendukung operasional. Tidak perlu latar belakang khusus — niat dan konsistensi sudah cukup.
+          </p>
+          <ul class="space-y-2">
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Terbuka untuk semua latar belakang
+            </li>
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Jadwal bisa disesuaikan
+            </li>
+            <li class="text-[#6B6560] font-body text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#2A6049] flex-shrink-0"></span>
+              Bisa dimulai kapan saja
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO JOIN -->
+  <section class="section bg-[#F7F5F0]">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="badge badge-primary">Cara Bergabung</span>
+        <div class="divider mx-auto mt-3 mb-4"></div>
+        <h2 class="section-heading mb-4">Tiga langkah sederhana</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-full bg-[#2A6049] text-white font-display font-semibold text-xl flex items-center justify-center mx-auto mb-4">1</div>
+          <h3 class="font-body font-bold text-[#1C1A17] mb-2">Hubungi kami via WhatsApp</h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">Kirim pesan singkat — perkenalkan diri, ceritakan minat Anda. Tidak perlu surat atau CV.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-full bg-[#2A6049] text-white font-display font-semibold text-xl flex items-center justify-center mx-auto mb-4">2</div>
+          <h3 class="font-body font-bold text-[#1C1A17] mb-2">Datang dan lihat langsung</h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">Kami undang Anda untuk hadir di sesi terdekat. Lihat langsung kegiatannya sebelum memutuskan.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-full bg-[#2A6049] text-white font-display font-semibold text-xl flex items-center justify-center mx-auto mb-4">3</div>
+          <h3 class="font-body font-bold text-[#1C1A17] mb-2">Mulai berkontribusi</h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">Tentukan jadwal yang cocok dan mulai. Kami mendampingi Anda di sesi pertama.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+mendaftar+sebagai+relawan+Rumah+Singgah+Tegar+Sewan."
+           class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Daftar sekarang via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST VOLUNTEER PHOTOS -->
+  <section class="section bg-[#FFFFFF]">
+    <div class="container">
+      <div class="text-center mb-10">
+        <span class="badge badge-primary">Relawan Terdahulu</span>
+        <div class="divider mx-auto mt-3 mb-4"></div>
+        <h2 class="section-heading mb-3">Mereka sudah merasakan manfaatnya</h2>
+        <p class="section-subheading max-w-xl mx-auto">Ratusan mahasiswa telah berkontribusi di sini. Bergabunglah dan jadilah bagian dari cerita ini.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="aspect-square rounded-2xl overflow-hidden">
+          <img src="images/volunteers/IMG_1662-opt.webp"
+               alt="Relawan mahasiswa di Rumah Singgah Tegar Sewan"
+               class="w-full h-full object-cover" loading="lazy" width="280" height="280" />
+        </div>
+        <div class="aspect-square rounded-2xl overflow-hidden">
+          <img src="images/volunteers/IMG_1663-opt.webp"
+               alt="Relawan bersama anak-anak di Sewan Tangerang"
+               class="w-full h-full object-cover" loading="lazy" width="280" height="280" />
+        </div>
+        <div class="aspect-square rounded-2xl overflow-hidden">
+          <img src="images/volunteers/IMG_1664-opt.webp"
+               alt="Kegiatan relawan di Rumah Singgah Tegar Sewan"
+               class="w-full h-full object-cover" loading="lazy" width="280" height="280" />
+        </div>
+        <div class="aspect-square rounded-2xl overflow-hidden">
+          <img src="images/volunteers/IMG_1665-opt.webp"
+               alt="Relawan mahasiswa mengajar anak-anak Sewan"
+               class="w-full h-full object-cover" loading="lazy" width="280" height="280" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section bg-[#2A6049]">
+    <div class="container text-center">
+      <h2 class="font-display text-white text-3xl md:text-4xl font-semibold mb-4">
+        Siap bergabung?
+      </h2>
+      <p class="text-white/80 font-body text-lg mb-10 max-w-xl mx-auto">
+        Kirim pesan WhatsApp sekarang. Tidak ada proses panjang — kami akan respons segera.
+      </p>
+      <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+mendaftar+sebagai+relawan+Rumah+Singgah+Tegar+Sewan."
+         class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Daftar via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  </main>
+  <footer class="footer py-12">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <p class="font-display text-2xl font-semibold text-white mb-3">Tegar Sewan</p>
+          <p class="text-[#F0EEE9]/70 font-body text-sm leading-relaxed">Rumah Singgah Tegar Sewan<br />Hadir di tengah anak-anak Sewan sejak 2013.</p>
+        </div>
+        <div>
+          <p class="font-body font-bold text-white mb-4 text-sm uppercase tracking-widest">Halaman</p>
+          <ul class="space-y-2 list-none p-0 m-0" role="list">
+            <li><a href="tentang-kami.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Tentang Kami</a></li>
+            <li><a href="program-kami.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Program Kami</a></li>
+            <li><a href="galeri-cita-cita.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Galeri Cita-Cita</a></li>
+            <li><a href="transparansi-dana.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Transparansi Dana</a></li>
+            <li><a href="jadi-relawan.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Jadi Relawan</a></li>
+            <li><a href="kontak.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-body font-bold text-white mb-4 text-sm uppercase tracking-widest">Kontak & Donasi</p>
+          <p class="text-[#F0EEE9]/70 font-body text-sm mb-3">Jl. Rw. Kucing I GG Dadali 2 No.42, RT.001/RW.06,<br />Neglasari, Kota Tangerang, Banten 15129</p>
+          <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+tahu+lebih+tentang+Rumah+Singgah+Tegar+Sewan."
+             class="text-[#25D366] font-body font-semibold text-sm hover:underline block mb-4"
+             target="_blank" rel="noopener noreferrer">+62 821-1193-6758 (WhatsApp)</a>
+          <div class="bg-white/10 rounded-xl p-4">
+            <p class="text-white font-body font-bold text-sm mb-1">Rekening Donasi</p>
+            <p class="text-[#F0EEE9]/70 font-body text-sm">Bank BCA</p>
+            <p class="text-white font-body font-semibold text-sm">1084439129</p>
+            <p class="text-[#F0EEE9]/70 font-body text-sm">a.n. Heri Dermawan</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-[#F0EEE9]/50 text-xs font-body">© 2013–2026 Rumah Singgah Tegar Sewan. Semua hak dilindungi.</p>
+        <a href="https://www.instagram.com/rumahsinggahtangerang/" class="text-[#F0EEE9]/50 hover:text-white text-xs font-body no-underline transition-colors" target="_blank" rel="noopener noreferrer">Instagram @rumahsinggahtangerang</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+tahu+lebih+tentang+Rumah+Singgah+Tegar+Sewan."
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+     aria-label="Chat WhatsApp dengan Rumah Singgah Tegar Sewan">
+    <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

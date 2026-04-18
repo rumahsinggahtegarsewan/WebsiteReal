@@ -1,0 +1,350 @@
+/* style.css — Rumah Singgah Tegar Sewan */
+/* Architecture v2.0 §5 — CSS variable block (canonical). Do NOT use v1.0 values. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* === BRAND === */
+  --color-primary:         #2A6049;
+  --color-primary-light:   #3D8A68;
+  --color-primary-faint:   #EAF4EF;
+
+  /* === SEMANTIC STATUS === */
+  --color-red-soft:        #C0392B;
+  --color-red-bg:          #FEF2F1;
+  --color-red-border:      #FECACA;
+
+  --color-green-soft:      #1E7D5A;
+  --color-green-bg:        #F0FBF5;
+  --color-green-border:    #A7F3D0;
+
+  --color-yellow-soft:     #B45309;
+  --color-yellow-bg:       #FFFBEB;
+  --color-yellow-border:   #FDE68A;
+
+  /* === NEUTRALS === */
+  --color-bg:              #F7F5F0;
+  --color-surface:         #FFFFFF;
+  --color-surface-muted:   #F0EEE9;
+  --color-surface-hover:   #F9F8F4;
+  --color-text:            #1C1A17;
+  --color-text-muted:      #6B6560;
+  --color-border:          #E5E2DB;
+
+  /* === ACTION === */
+  --color-accent:          #25D366;   /* WhatsApp green — floating button ONLY */
+  --color-accent-dark:     #128C7E;
+
+  /* === TYPOGRAPHY === */
+  --font-display: 'Fredoka', sans-serif;
+  --font-body:    'Nunito', sans-serif;
+
+  /* === SPACING (8pt grid) === */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* === BORDER RADIUS === */
+  --radius-sm:     8px;
+  --radius-md:     16px;
+  --radius-lg:     20px;
+  --radius-xl:     24px;
+  --radius-2xl:    32px;
+  --radius-bubble: 9999px;
+
+  /* === SHADOWS === */
+  --shadow-xs:        0 1px 4px rgba(28,26,23,0.06);
+  --shadow-sm:        0 2px 8px rgba(28,26,23,0.08);
+  --shadow-md:        0 4px 16px rgba(28,26,23,0.10);
+  --shadow-lg:        0 8px 28px rgba(28,26,23,0.12);
+  --shadow-cta:       0 6px 20px rgba(42,96,73,0.30);
+  --shadow-whatsapp:  0 6px 20px rgba(37,211,102,0.35);
+}
+
+/* === BASE BODY === */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reduced motion — respect user OS preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* === REUSABLE COMPONENT CLASSES === */
+
+/* Cards */
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  background-color: var(--color-surface-hover);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-bubble);
+  box-shadow: var(--shadow-cta);
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+  box-shadow: var(--shadow-xs);
+  transition-duration: 80ms;
+}
+
+.btn-primary:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 3px;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 13px 27px;
+  border-radius: var(--radius-bubble);
+  border: 2px solid var(--color-primary);
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-faint);
+}
+
+.btn-secondary:active {
+  transform: scale(0.97);
+  transition-duration: 80ms;
+}
+
+.btn-secondary:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1a7a45; /* darker green — passes WCAG AA 4.5:1 with white text */
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-bubble);
+  box-shadow: var(--shadow-whatsapp);
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp:active {
+  transform: scale(0.97);
+  box-shadow: none;
+  transition-duration: 80ms;
+}
+
+.btn-whatsapp:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-whatsapp);
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: var(--color-accent-dark);
+}
+
+.whatsapp-float:active {
+  transform: scale(0.95);
+  transition-duration: 80ms;
+}
+
+.whatsapp-float:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Section heading */
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.section-subheading {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Divider */
+.divider {
+  width: 48px;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-bubble);
+  margin: 12px 0;
+}
+
+/* Section padding */
+.section {
+  padding: var(--space-20) 0;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: var(--space-12) 0;
+  }
+  .container {
+    padding: 0 var(--space-4);
+  }
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-xs);
+}
+
+/* Mobile nav toggle */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-4) var(--space-6);
+    gap: var(--space-4);
+  }
+
+  .nav-menu.is-open {
+    display: flex;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-text);
+  color: var(--color-surface-muted);
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-bubble);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-primary {
+  background-color: var(--color-primary-faint);
+  color: var(--color-primary);
+}

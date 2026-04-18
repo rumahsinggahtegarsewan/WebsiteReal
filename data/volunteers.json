@@ -1,0 +1,29 @@
+[
+  {
+    "id": "vol-001",
+    "name": "Anisa R.",
+    "university": "Universitas Indonesia",
+    "year": "2023",
+    "role": "Pengajar Bahasa Inggris",
+    "quote": "Saya kira mengajar di sini itu tentang memberi. Ternyata saya yang paling banyak belajar — tentang kreativitas, tentang sabar, dan tentang kenapa pendidikan itu bukan soal nilai.",
+    "imageUrl": "/images/volunteers/VOLUNTEERS-rumah-tangerang-anak-terdekat-opt.webp"
+  },
+  {
+    "id": "vol-002",
+    "name": "Budi S.",
+    "university": "UPN Veteran Jakarta",
+    "year": "2023",
+    "role": "Pengajar Matematika",
+    "quote": "Anak-anak di sini tidak kekurangan semangat. Mereka hanya butuh seseorang yang mau duduk bersama dan menjelaskan satu soal sampai benar-benar paham. Itu yang kami lakukan.",
+    "imageUrl": "/images/volunteers/VOLUNTEERS-rumah-tangerang-anak-terdekat-opt.webp"
+  },
+  {
+    "id": "vol-003",
+    "name": "Citra M.",
+    "university": "Universitas Tarumanagara",
+    "year": "2024",
+    "role": "Relawan Kesehatan",
+    "quote": "Ini bukan hanya kegiatan MBKM. Tempat ini nyata — anak-anaknya nyata, masalahnya nyata. Dan rasanya luar biasa ketika kita bisa jadi bagian dari solusi yang juga nyata.",
+    "imageUrl": "/images/volunteers/VOLUNTEERS-rumah-tangerang-anak-terdekat-opt.webp"
+  }
+]

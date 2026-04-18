@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cita-001",
+    "displayName": "D.",
+    "age": 8,
+    "program": "Matematika",
+    "dream": "Jadi dokter supaya bisa bantu tetangga yang sakit",
+    "shortStory": "D. selalu datang 15 menit lebih awal sebelum kelas dimulai. Dia bilang takut ketinggalan penjelasan pertama.",
+    "imageUrl": "/images/gallery/IMG_1697-opt.webp",
+    "consentGiven": true
+  },
+  {
+    "id": "cita-002",
+    "displayName": "R.",
+    "age": 10,
+    "program": "Bahasa Inggris",
+    "dream": "Jadi guru bahasa Inggris dan ngajarin anak-anak di sini juga",
+    "shortStory": "R. paling suka waktu belajar lagu berbahasa Inggris. Katanya lebih mudah diingat kalau sambil nyanyi.",
+    "imageUrl": "/images/gallery/IMG_1698-opt.webp",
+    "consentGiven": true
+  },
+  {
+    "id": "cita-003",
+    "displayName": "A.",
+    "age": 9,
+    "program": "Matematika",
+    "dream": "Jadi insinyur dan bangun jembatan",
+    "shortStory": "A. suka menggambar denah rumah di buku catatannya. Setiap gambar selalu ada keterangan ukurannya.",
+    "imageUrl": "/images/gallery/IMG_1700-opt.webp",
+    "consentGiven": true
+  },
+  {
+    "id": "cita-004",
+    "displayName": "S.",
+    "age": 7,
+    "program": "Kesehatan",
+    "dream": "Jadi perawat supaya bisa jaga adik-adik yang sakit",
+    "shortStory": "S. yang paling telaten waktu ada sesi pemeriksaan kesehatan. Dia selalu antri rapi dan ingat nama semua kakak relawan.",
+    "imageUrl": "/images/gallery/IMG_1702-opt.webp",
+    "consentGiven": true
+  },
+  {
+    "id": "cita-005",
+    "displayName": "F.",
+    "age": 11,
+    "program": "Bahasa Inggris",
+    "dream": "Jadi chef dan buka restoran",
+    "shortStory": "F. paling semangat kalau kita belajar kosakata makanan. Dia bisa hafal 20 kata baru dalam satu sesi.",
+    "imageUrl": "/images/gallery/IMG_1703-opt.webp",
+    "consentGiven": true
+  },
+  {
+    "id": "cita-006",
+    "displayName": "N.",
+    "age": 8,
+    "program": "Matematika",
+    "dream": "Jadi polisi supaya kampungnya aman",
+    "shortStory": "N. selalu duduk di baris depan. Kalau ada teman yang belum mengerti, dia yang duluan angkat tangan minta kakak relawan jelaskan lagi.",
+    "imageUrl": "/images/gallery/IMG_1704-opt.webp",
+    "consentGiven": true
+  }
+]

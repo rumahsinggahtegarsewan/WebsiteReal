@@ -1,0 +1,75 @@
+[build]
+  publish = "."
+
+# ---------------------------------------------------------------------------
+# HTTPS enforcement
+# Force HTTPS must also be toggled ON in: Netlify Dashboard →
+# Site configuration → Domain management → HTTPS → Force HTTPS.
+# The HSTS header below reinforces it at the browser level once visited.
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "http://*"
+  to   = "https://:splat"
+  status = 301
+  force  = true
+
+# Edge function handles security monitoring on every request
+[[edge_functions]]
+  function = "security-monitor"
+  path     = "/*"
+
+# ---------------------------------------------------------------------------
+# Security headers — applied to every response
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Enforce HTTPS for 1 year; include subdomains; allow preload submission
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # Clickjacking protection
+    X-Frame-Options = "DENY"
+
+    # Prevent MIME-type sniffing
+    X-Content-Type-Options = "nosniff"
+
+    # Limit referrer data to same origin on cross-origin requests
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Disable browser features not used by this site
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
+
+    # Content Security Policy
+    # - Tailwind CDN: allowed as script + generates inline styles (unsafe-inline)
+    # - Google Analytics / GTM: allowed for script + connect
+    # - Google Maps: allowed only in frames
+    # - Everything else: denied by default
+    Content-Security-Policy = "default-src 'none'; script-src 'self' https://cdn.tailwindcss.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; frame-src https://www.google.com https://maps.google.com; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://api.netlify.com; font-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none';"
+
+    # Prevent cross-origin isolation leaks
+    Cross-Origin-Opener-Policy  = "same-origin"
+    Cross-Origin-Resource-Policy = "same-origin"
+
+# Static assets: long cache, immutable
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Data files: short cache + prevent search engines indexing raw JSON
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    X-Robots-Tag  = "noindex, nofollow"

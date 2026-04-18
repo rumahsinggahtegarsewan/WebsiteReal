@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transparansi Dana — Rumah Singgah Tegar Sewan</title>
+  <meta name="description" content="Keterbukaan pengelolaan dana Rumah Singgah Tegar Sewan. Lihat bagaimana setiap rupiah donasi digunakan untuk anak-anak Sewan, Tangerang." />
+
+  <meta property="og:title" content="Transparansi Dana — Rumah Singgah Tegar Sewan" />
+  <meta property="og:description" content="Rekening kami terbuka untuk diperiksa. Lihat bagaimana setiap rupiah donasi digunakan." />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:         '#2A6049',
+            'primary-light': '#3D8A68',
+            'primary-faint': '#EAF4EF',
+            bg:              '#F7F5F0',
+            surface:         '#FFFFFF',
+            'surface-muted': '#F0EEE9',
+            'text-muted':    '#6B6560',
+            border:          '#E5E2DB',
+            accent:          '#25D366',
+            'accent-dark':   '#128C7E',
+          },
+          fontFamily: {
+            display: ['Fredoka', 'sans-serif'],
+            body:    ['Nunito', 'sans-serif'],
+          },
+          borderRadius: { bubble: '9999px' },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="canonical" href="https://rumahsinggahtegarsewan.id/transparansi-dana.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Rumah Singgah Tegar Sewan",
+    "url": "https://rumahsinggahtegarsewan.id",
+    "foundingDate": "2013",
+    "description": "Rumah singgah yang menyediakan pendidikan dan layanan kesehatan gratis untuk anak-anak di Sewan, Tangerang sejak 2013.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Rw. Kucing I GG Dadali 2 No.42, RT.001/RW.06",
+      "addressLocality": "Sewan",
+      "addressRegion": "Tangerang",
+      "addressCountry": "ID"
+    },
+    "telephone": "+6282111936758",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": "Indonesian"
+    }
+  }
+  </script>
+</head>
+<body class="bg-[#F7F5F0]">
+
+  <!-- VERSE TAGLINE BAR -->
+  <div class="bg-[#1C3D2D] text-center py-2.5 px-4">
+    <p class="text-white/75 font-body text-xs italic leading-relaxed">
+      <span class="hidden sm:inline">"Di rumah Bapa-Ku banyak tempat tinggal. Sebab Aku pergi ke situ untuk menyediakan tempat bagimu."&nbsp;</span>
+      <span class="text-white/75 not-italic">— Yohanes 14:2</span>
+    </p>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <nav class="flex items-center justify-between py-4" aria-label="Navigasi utama">
+        <a href="index.html" class="flex items-center no-underline" aria-label="Rumah Singgah Tegar Sewan — Halaman Utama">
+          <img src="images/logo/logo-full.jpeg"
+               alt="Tegar Sewan Refuge Center — Rumah Singgah Tegar Sewan"
+               class="h-16 w-auto"
+               width="64" height="64" />
+        </a>
+        <ul id="nav-menu" class="nav-menu list-none m-0 p-0" role="list">
+          <li><a href="index.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Beranda</a></li>
+          <li><a href="tentang-kami.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Tentang Kami</a></li>
+          <li><a href="program-kami.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Program</a></li>
+          <li><a href="galeri-cita-cita.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Galeri Cita-Cita</a></li>
+          <li><a href="transparansi-dana.html" class="nav-link text-[#2A6049] font-semibold text-sm no-underline">Transparansi</a></li>
+          <li><a href="blog.html" class="nav-link text-[#1C1A17] hover:text-[#2A6049] font-semibold text-sm no-underline transition-colors">Blog</a></li>
+          <li>
+            <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+tahu+lebih+tentang+Rumah+Singgah+Tegar+Sewan."
+               class="btn-primary text-sm py-2 px-5" target="_blank" rel="noopener noreferrer">Hubungi Kami</a>
+          </li>
+        </ul>
+        <button id="nav-toggle" class="md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-[#EAF4EF] transition-colors"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="Buka menu navigasi">
+          <span class="block w-6 h-0.5 bg-[#1C1A17] rounded"></span>
+          <span class="block w-6 h-0.5 bg-[#1C1A17] rounded"></span>
+          <span class="block w-6 h-0.5 bg-[#1C1A17] rounded"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+  <!-- PAGE HERO -->
+  <section class="bg-[#2A6049] py-16 md:py-20">
+    <div class="container">
+      <span class="badge bg-white/20 text-white mb-4">Transparansi Dana</span>
+      <h1 class="font-display text-white text-4xl md:text-5xl font-semibold max-w-2xl leading-tight mb-4">
+        Tidak ada yang kami sembunyikan.
+      </h1>
+      <p class="text-white/80 font-body text-lg max-w-xl leading-relaxed">
+        Kami belum berbadan hukum, tapi kami sudah berjalan sejak 2013. Rekening kami terbuka untuk diperiksa kapan saja.
+      </p>
+    </div>
+  </section>
+
+  <!-- TRUST STATEMENT -->
+  <section class="section bg-[#F7F5F0]">
+    <div class="container">
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-[#EAF4EF] border border-[#2A6049]/20 rounded-2xl p-8 text-center mb-10">
+          <p class="font-display text-[#2A6049] text-xl md:text-2xl font-semibold leading-relaxed">
+            "Kami belum berbadan hukum, tapi kami sudah berjalan sejak 2013. Rekening kami terbuka untuk diperiksa."
+          </p>
+        </div>
+        <p class="text-[#6B6560] font-body leading-relaxed text-center">
+          Kepercayaan yang kami bangun bukan dari dokumen resmi, tapi dari konsistensi kerja lebih dari satu dekade dan keterbukaan penuh terhadap siapa saja yang ingin tahu.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUND ALLOCATION BLUEPRINT -->
+  <section class="section bg-[#FFFFFF]">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="badge badge-primary">Alokasi Dana</span>
+        <div class="divider mx-auto mt-3 mb-4"></div>
+        <h2 class="section-heading mb-4">Ke mana setiap rupiah pergi</h2>
+        <p class="section-subheading max-w-xl mx-auto">
+          Ini adalah gambaran umum alokasi dana yang kami terapkan secara konsisten.
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto space-y-4">
+        <!-- Item 1 -->
+        <div class="flex items-center gap-5">
+          <div class="flex-shrink-0 w-16 text-right">
+            <span class="font-display text-[#2A6049] text-2xl font-semibold">60%</span>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="font-body font-bold text-[#1C1A17] text-sm">Operasional Program</span>
+            </div>
+            <div class="h-3 bg-[#E5E2DB] rounded-full overflow-hidden">
+              <div class="h-full bg-[#2A6049] rounded-full" style="width:60%"></div>
+            </div>
+            <p class="text-[#6B6560] font-body text-xs mt-1.5">Alat tulis, modul belajar, peralatan kesehatan dasar, dan kebutuhan langsung kegiatan.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-center gap-5">
+          <div class="flex-shrink-0 w-16 text-right">
+            <span class="font-display text-[#2A6049] text-2xl font-semibold">25%</span>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="font-body font-bold text-[#1C1A17] text-sm">Kebutuhan Anak</span>
+            </div>
+            <div class="h-3 bg-[#E5E2DB] rounded-full overflow-hidden">
+              <div class="h-full bg-[#3D8A68] rounded-full" style="width:25%"></div>
+            </div>
+            <p class="text-[#6B6560] font-body text-xs mt-1.5">Konsumsi kegiatan, seragam belajar, dan kebutuhan mendesak anak-anak binaan.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex items-center gap-5">
+          <div class="flex-shrink-0 w-16 text-right">
+            <span class="font-display text-[#2A6049] text-2xl font-semibold">15%</span>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="font-body font-bold text-[#1C1A17] text-sm">Cadangan & Darurat</span>
+            </div>
+            <div class="h-3 bg-[#E5E2DB] rounded-full overflow-hidden">
+              <div class="h-full bg-[#EAF4EF] border border-[#2A6049]/30 rounded-full" style="width:15%"></div>
+            </div>
+            <p class="text-[#6B6560] font-body text-xs mt-1.5">Dana cadangan untuk kebutuhan mendadak dan kelangsungan operasional jangka panjang.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F5F0] rounded-2xl p-5 mt-6">
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">
+            <strong class="text-[#1C1A17]">Catatan penting:</strong> Tidak ada gaji pengelola, tidak ada biaya sewa kantor. Hampir seluruh dana langsung digunakan untuk program dan kebutuhan anak-anak. Ingin melihat catatan lengkapnya? Hubungi kami via WhatsApp.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANK DETAILS + QRIS -->
+  <section class="section bg-[#F7F5F0]">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="badge badge-primary">Cara Donasi</span>
+        <div class="divider mx-auto mt-3 mb-4"></div>
+        <h2 class="section-heading mb-4">Transfer atau scan QRIS</h2>
+        <p class="section-subheading max-w-xl mx-auto">Pilih cara yang paling mudah untuk Anda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <!-- Bank Transfer -->
+        <div class="card p-8">
+          <div class="w-12 h-12 rounded-2xl bg-[#EAF4EF] flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-[#2A6049]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+            </svg>
+          </div>
+          <h3 class="font-body font-bold text-[#1C1A17] text-lg mb-4">Transfer Bank</h3>
+          <div class="space-y-3">
+            <div>
+              <p class="text-[#6B6560] font-body text-xs uppercase tracking-widest mb-1">Bank</p>
+              <p class="font-body font-bold text-[#1C1A17]">BCA</p>
+            </div>
+            <div>
+              <p class="text-[#6B6560] font-body text-xs uppercase tracking-widest mb-1">Nomor Rekening</p>
+              <p class="font-body font-bold text-[#1C1A17] text-lg tracking-wider">1084439129</p>
+            </div>
+            <div>
+              <p class="text-[#6B6560] font-body text-xs uppercase tracking-widest mb-1">Atas Nama</p>
+              <p class="font-body font-bold text-[#1C1A17]">Heri Dermawan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- QRIS -->
+        <div class="card p-8 flex flex-col items-center">
+          <div class="w-12 h-12 rounded-2xl bg-[#EAF4EF] flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-[#2A6049]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+            </svg>
+          </div>
+          <h3 class="font-body font-bold text-[#1C1A17] text-lg mb-4">Scan QRIS</h3>
+          <div class="rounded-xl overflow-hidden border-4 border-[#EAF4EF] w-48 h-48 flex items-center justify-center bg-white">
+            <img src="images/bank-details/qris-rumah-singgah-tegar-sewan.avif"
+                 alt="QRIS donasi Rumah Singgah Tegar Sewan"
+                 class="w-full h-full object-contain"
+                 loading="lazy" width="192" height="192" />
+          </div>
+          <p class="text-[#6B6560] font-body text-xs text-center mt-3">Scan menggunakan aplikasi dompet digital atau mobile banking apa saja</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="text-[#6B6560] font-body text-sm mb-4">Ingin konfirmasi donasi atau minta bukti setelah transfer?</p>
+        <a href="https://wa.me/6282111936758?text=Halo%2C+saya+sudah+melakukan+donasi+untuk+Rumah+Singgah+Tegar+Sewan."
+           class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Konfirmasi donasi via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST RECORDS CTA -->
+  <section class="section bg-[#2A6049]">
+    <div class="container text-center">
+      <h2 class="font-display text-white text-3xl md:text-4xl font-semibold mb-4">
+        Ingin melihat catatannya langsung?
+      </h2>
+      <p class="text-white/80 font-body text-lg mb-8 max-w-xl mx-auto">
+        Kirim pesan WhatsApp dan kami kirimkan catatan keuangan kami langsung ke Anda. Tidak perlu formulir, tidak perlu menunggu.
+      </p>
+      <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+melihat+laporan+keuangan+Rumah+Singgah+Tegar+Sewan."
+         class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Minta laporan keuangan
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ TRANSPARANSI -->
+  <section class="section bg-[#FFFFFF]">
+    <div class="container">
+      <div class="text-center mb-12">
+        <span class="badge badge-primary">Pertanyaan Umum</span>
+        <div class="divider mx-auto mt-3 mb-4"></div>
+        <h2 class="section-heading mb-4">Pertanyaan yang Sering Ditanyakan</h2>
+        <p class="section-subheading max-w-xl mx-auto">
+          Kejujuran bukan hanya nilai — itu cara kami bekerja. Berikut jawaban langsung atas pertanyaan yang paling sering datang dari calon donatur.
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto space-y-4">
+
+        <div class="card p-6 md:p-7">
+          <h3 class="text-[#1C1A17] font-body font-bold text-base mb-2">
+            Bagaimana cara saya memverifikasi penggunaan dana donasi?
+          </h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">
+            Hubungi kami langsung melalui WhatsApp. Kami akan mengirimkan catatan keuangan kami secara langsung — tidak perlu membuat akun, tidak perlu mengisi formulir panjang. Cukup tanya, kami jawab dan kirimkan buktinya.
+          </p>
+        </div>
+
+        <div class="card p-6 md:p-7">
+          <h3 class="text-[#1C1A17] font-body font-bold text-base mb-2">
+            Apakah ada laporan keuangan resmi yang bisa saya lihat?
+          </h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">
+            Kami bukan lembaga formal berbadan hukum, jadi tidak ada laporan audit dari akuntan publik. Yang kami miliki adalah catatan pemasukan dan pengeluaran yang kami jaga sejak awal beroperasi. Catatan ini terbuka untuk siapa saja yang ingin memeriksa — cukup hubungi kami.
+          </p>
+        </div>
+
+        <div class="card p-6 md:p-7">
+          <h3 class="text-[#1C1A17] font-body font-bold text-base mb-2">
+            Berapa persen dana yang langsung digunakan untuk program anak?
+          </h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">
+            Hampir seluruhnya. Kami tidak memiliki gaji pengelola tetap, tidak ada biaya sewa kantor, tidak ada overhead besar. Relawan kami bekerja sukarela. Dana donasi mayoritas langsung masuk ke kebutuhan operasional program — alat tulis, pemeriksaan kesehatan, dan kegiatan anak-anak.
+          </p>
+        </div>
+
+        <div class="card p-6 md:p-7">
+          <h3 class="text-[#1C1A17] font-body font-bold text-base mb-2">
+            Apakah donasi saya aman jika ditransfer ke rekening ini?
+          </h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">
+            Rekening kami telah digunakan selama lebih dari satu dekade dan bisa ditelusuri riwayatnya. Kami memahami keraguan Anda — dan kami tidak meminta kepercayaan buta. Periksa catatan kami dulu, tanya orang yang sudah pernah berdonasi, baru putuskan. Kami siap diperiksa kapan saja.
+          </p>
+        </div>
+
+        <div class="card p-6 md:p-7">
+          <h3 class="text-[#1C1A17] font-body font-bold text-base mb-2">
+            Bisakah saya menentukan tujuan penggunaan donasi saya?
+          </h3>
+          <p class="text-[#6B6560] font-body text-sm leading-relaxed">
+            Bisa. Jika Anda ingin donasi Anda digunakan untuk program tertentu — misalnya perlengkapan belajar atau pemeriksaan kesehatan — sampaikan saat menghubungi kami via WhatsApp. Kami akan catat dan konfirmasi penggunaannya kepada Anda.
+          </p>
+        </div>
+
+        <div class="text-center pt-4">
+          <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+melihat+laporan+keuangan+Rumah+Singgah+Tegar+Sewan."
+             class="btn-whatsapp"
+             target="_blank" rel="noopener noreferrer">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Minta laporan keuangan via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  </main>
+  <footer class="footer py-12">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <p class="font-display text-2xl font-semibold text-white mb-3">Tegar Sewan</p>
+          <p class="text-[#F0EEE9]/70 font-body text-sm leading-relaxed">Rumah Singgah Tegar Sewan<br />Hadir di tengah anak-anak Sewan sejak 2013.</p>
+        </div>
+        <div>
+          <p class="font-body font-bold text-white mb-4 text-sm uppercase tracking-widest">Halaman</p>
+          <ul class="space-y-2 list-none p-0 m-0" role="list">
+            <li><a href="tentang-kami.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Tentang Kami</a></li>
+            <li><a href="program-kami.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Program Kami</a></li>
+            <li><a href="galeri-cita-cita.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Galeri Cita-Cita</a></li>
+            <li><a href="transparansi-dana.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Transparansi Dana</a></li>
+            <li><a href="jadi-relawan.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Jadi Relawan</a></li>
+            <li><a href="kontak.html" class="text-[#F0EEE9]/70 hover:text-white text-sm font-body no-underline transition-colors">Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-body font-bold text-white mb-4 text-sm uppercase tracking-widest">Kontak & Donasi</p>
+          <p class="text-[#F0EEE9]/70 font-body text-sm mb-3">Jl. Rw. Kucing I GG Dadali 2 No.42, RT.001/RW.06,<br />Neglasari, Kota Tangerang, Banten 15129</p>
+          <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+tahu+lebih+tentang+Rumah+Singgah+Tegar+Sewan."
+             class="text-[#25D366] font-body font-semibold text-sm hover:underline block mb-4"
+             target="_blank" rel="noopener noreferrer">+62 821-1193-6758 (WhatsApp)</a>
+          <div class="bg-white/10 rounded-xl p-4">
+            <p class="text-white font-body font-bold text-sm mb-1">Rekening Donasi</p>
+            <p class="text-[#F0EEE9]/70 font-body text-sm">Bank BCA</p>
+            <p class="text-white font-body font-semibold text-sm">1084439129</p>
+            <p class="text-[#F0EEE9]/70 font-body text-sm">a.n. Heri Dermawan</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-[#F0EEE9]/50 text-xs font-body">© 2013–2026 Rumah Singgah Tegar Sewan. Semua hak dilindungi.</p>
+        <a href="https://www.instagram.com/rumahsinggahtangerang/" class="text-[#F0EEE9]/50 hover:text-white text-xs font-body no-underline transition-colors" target="_blank" rel="noopener noreferrer">Instagram @rumahsinggahtangerang</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/6282111936758?text=Halo%2C+saya+ingin+tahu+lebih+tentang+Rumah+Singgah+Tegar+Sewan."
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+     aria-label="Chat WhatsApp dengan Rumah Singgah Tegar Sewan">
+    <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

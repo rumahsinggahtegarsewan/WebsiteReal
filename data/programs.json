@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pendidikan",
+    "name": "Pendidikan Gratis",
+    "description": "Kelas belajar gratis untuk anak-anak usia sekolah dasar di sekitar Sewan, Tangerang. Fokus pada Matematika dan Bahasa Inggris — dua mata pelajaran yang paling dibutuhkan tapi paling susah diakses. Pengajaran dilakukan oleh relawan mahasiswa secara langsung, bukan online.",
+    "imageUrl": "/images/programs/program-belajar-anak-sewan-tangerang-06-opt.webp",
+    "participantNote": "Anak usia 6–12 tahun dari keluarga yang membutuhkan di sekitar Sewan.",
+    "volunteerNote": "Relawan mengajar langsung: Matematika atau Bahasa Inggris, hari Sabtu/Minggu, durasi 2 jam."
+  },
+  {
+    "id": "kesehatan",
+    "name": "Kesehatan Anak",
+    "description": "Pemeriksaan kesehatan dasar dan edukasi gizi untuk anak-anak binaan. Meliputi pengecekan berat badan, tinggi badan, dan kondisi umum. Kami bekerja sama dengan relawan mahasiswa kesehatan dan bidan setempat.",
+    "imageUrl": "/images/programs/program-belajar-anak-sewan-tangerang-08-opt2.webp",
+    "participantNote": "Semua anak binaan Rumah Singgah Tegar Sewan.",
+    "volunteerNote": "Relawan dari jurusan keperawatan, gizi, atau kebidanan dapat membantu sesi pemeriksaan berkala."
+  }
+]
